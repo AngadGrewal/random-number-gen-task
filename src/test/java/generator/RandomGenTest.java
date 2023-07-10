@@ -30,9 +30,7 @@ public class RandomGenTest {
 
     @Test
     public void testWithMismatchedLengths() {
-        assertThrows(IllegalArgumentException.class, () -> {
-            new RandomGen(new int[]{1}, new float[]{0.9f, 0.1f});
-        });
+        assertThrows(IllegalArgumentException.class, () -> new RandomGen(new int[]{1}, new float[]{0.9f, 0.1f}));
     }
 
     @Test
